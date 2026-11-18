@@ -1,0 +1,32 @@
+id = "gitlens"
+name = "GitLens Blame"
+version = "0.1.0"
+schema_version = 1
+authors = ["Local"]
+description = "Show Git blame details as per-line inlay hints."
+repository = "https://github.com/liudezhang/zed-gitlens"
+
+[lib]
+kind = "Rust"
+version = "0.7.0"
+
+[language_servers.gitlens-blame]
+name = "GitLens Blame"
+languages = ["Rust", "Python", "JavaScript", "TypeScript", "TSX", "Go", "C", "C++", "Java", "Ruby", "PHP", "JSON", "YAML", "TOML", "Markdown"]
+
+[language_servers.gitlens-blame.language_ids]
+"Rust" = "rust"
+"Python" = "python"
+"JavaScript" = "javascript"
+"TypeScript" = "typescript"
+"TSX" = "typescriptreact"
+"Go" = "go"
+"C" = "c"
+"C++" = "cpp"
+"Java" = "java"
+"Ruby" = "ruby"
+"PHP" = "php"
+"JSON" = "json"
+"YAML" = "yaml"
+"TOML" = "toml"
+"Markdown" = "markdown"
